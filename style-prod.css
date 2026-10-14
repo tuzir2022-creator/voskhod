@@ -205,8 +205,10 @@ main { max-width: var(--wrap); margin: 0 auto; padding: 0 var(--gut); }
 .s-bar__logo { width: 40px; height: 40px; border-radius: 6px; flex: none; display: block; object-fit: contain; }
 @media (max-width: 860px) { .s-bar__logo { width: 34px; height: 34px; } }
 
-.s-send { flex-wrap: wrap; }
-.s-send .s-btn--wide { flex: 1 1 100%; }
+@media (min-width: 861px) {
+  .s-send { flex-wrap: wrap; }
+  .s-send .s-btn--wide { flex: 1 1 100%; }
+}
 
 .s-toprating { display: inline-flex; flex-direction: column; align-items: flex-start; gap: 3px; color: inherit; text-decoration: none; }
 .s-toprating__row { display: inline-flex; align-items: center; gap: 8px; }
